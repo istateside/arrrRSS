@@ -1,0 +1,139 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ /* Reset */
+
+html, body, h1, div, ul, li, a, span {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: inherit;
+  font-style: inherit;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #5F9AB8;
+}
+/* Header */
+
+h1 {
+  font-size: 50px;
+  color: #E6FEBC;
+  margin: 0 auto;
+}
+
+h1.hover {
+  color: #55E0D3;
+}
+
+div#header-bar {
+  position: relative;
+  padding: 60px 20px 15px 20px;
+  background: #044363;
+}
+
+div#logo-div {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+div#logo-div.hover {
+  color: #55E0D3;
+}
+
+div.content {
+  width: 70%;
+  margin: 10px 0 10px 30px;
+  background: #F4FFE3;
+  height: 80%;
+}
+
+nav {
+  position: absolute;
+  left: 8px;
+  bottom: 5px;
+  color: #E6FEBC;
+  font-size: 20px;
+}
+
+a.hover {
+  color: #55E0D3;
+}
+
+/* Feed Index */
+
+li.feed-link {
+  font-size: 25px;
+  margin: 20px 0 0 2px;
+  background: #E6FEBC;
+  padding: 5px;
+}
+
+li.feed-link.hover {
+  color: #1D99CF;
+}
+
+div#refresh {
+
+}
+
+/* Feed Show */
+
+li.entry-title {
+  color: #044363;
+  margin: 5px 0;
+  padding: 0px 5px;
+    margin-left: 3em;
+}
+
+li.entry-title:nth-child(odd) {
+  background: #E6FEBC;
+}
+div.feed-header {
+  background: #E6FEBC;
+  width: 100%;
+  position: relative;
+}
+
+h1#feed-title {
+  color: #044363;
+  padding: 0 0 0 10px;
+}
+
+button#refresh-button {
+  position: absolute;
+  right: 10px;
+  height: 50%;
+  top: 25%;
+  font-size: 15px;
+  border-radius: 16px;
+  background: white;
+}
+
+div.content > ul {
+  overflow: scroll;
+  max-height: 800px;
+  list-style: decimal;
+}
+

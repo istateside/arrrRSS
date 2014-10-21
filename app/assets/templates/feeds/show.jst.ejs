@@ -1,0 +1,7 @@
+
+<div class="feed-header"><h1 id="feed-title"><%= feed.escape('title') %><button id="refresh-button">&#8634;</button></h1></div>
+<% feed.entries().each(function(entry) { %>
+  <% console.log(entry.get('published_at')) %>
+<li class="entry-title"><%= entry.escape('title') %></li>
+<% }); %>
+

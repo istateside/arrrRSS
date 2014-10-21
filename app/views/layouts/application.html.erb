@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News Reader</title>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header-bar">
+  <nav><a href="#">Home</a></nav>
+  <div id="logo-div"><a href="#" class="nav-link"><h1>arrrrRSS</h1></a></div>
+</div>
+
+<%= yield %>
+
+  <div class="sidebar"></div>
+  <div class="content"></div>
+</body>
+</html>
